@@ -8,7 +8,7 @@ df.sub1$Date <- as.POSIXlt(paste(as.Date(df.sub1$Date, format="%d/%m/%Y"), df.su
 ## Create plot
 library(datasets)
 ## Build the plots in a 2X2 matrix.
-png("plot4.png")
+png("plot4.png", width=480, height=480)
 par(mfrow = c(2, 2))
 with(df.sub1,plot(df.sub1$Date,df.sub1$Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)"))
 with(df.sub1,plot(df.sub1$Date,df.sub1$Voltage,type="l",xlab="",ylab="Voltage"))
